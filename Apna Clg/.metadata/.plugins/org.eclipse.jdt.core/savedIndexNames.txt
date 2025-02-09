@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\HP\Desktop\DSAfrom27May24\Apna Clg\.metadata\.plugins\org.eclipse.jdt.core
+3833189157.index
+1865797976.index
+759924884.index

@@ -1,0 +1,21 @@
+package recursionString;
+
+public class A2skipStringFromString {
+    //Que. Skip a String(apple) from a String bdapplefg using recursion
+	public static void main(String[] args) {
+		String str="bdapplelfg";
+		String newStr= skipStr(str);
+		System.out.println("String after a skip is :"+newStr);//Ans:
+	}
+
+	public static String skipStr(String str) {
+	  if(str.isEmpty()){
+		  return "";
+	  }
+	  if(str.startsWith("apple")) {
+		  return skipStr(str.substring(5));
+	  }else {
+		  return str.charAt(0) + skipStr(str.substring(1));
+	  }
+	}
+}

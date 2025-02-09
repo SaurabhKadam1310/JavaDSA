@@ -1,0 +1,10 @@
+package B3Trie;
+
+public class A2CountUniqueSubstrings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

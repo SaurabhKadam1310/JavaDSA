@@ -1,0 +1,36 @@
+package recursionString;
+
+public class A1removeAfromString {
+  //Question given a string str=baccad remove a from that means newStr=bccd using recursion
+	public static void main(String[] args) {
+		String str="baccad";
+		String newStr="";
+		
+		//Normal way
+		for(int i=0;i<str.length();i++) {
+			if(str.charAt(i)=='a') {
+				continue;
+			}else {
+				newStr+=str.charAt(i);
+			}
+		}
+		System.out.println("New String are: "+newStr); 
+		
+		//Recursion way
+		newStr=removeAlla(str,0,"");
+		System.out.println("New String using recursion: "+newStr); //Ans:bccd
+
+	}
+	
+	public static String removeAlla(String str,int index,String newStr) {
+		if(str.length()==index) {
+			//System.out.println("New string using recursion: "+newStr);
+			return newStr;
+		  }
+		if(str.charAt(index)!='a') {
+			newStr+=str.charAt(index);
+		}
+		return removeAlla(str,index+1,newStr);
+	}
+
+}
